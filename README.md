@@ -7,6 +7,6 @@ J'aimerais faire un jeux vidéo avec mon personnage, une fille avec des pouvoirs
 
 
 ## Option2 - Bataille des Plains d'Abraham
-Nouvelle fonctionnalité extra: animation intro avec une description historique de la bataille
-
+Une autre idée ça serait un "side-scrolling rpg" qui va ressembler à "Castle Crashers" et "Mortal Combat" et, surtout, va être basée sur l'événement historique au Canada - la Bataille des Plaines d'Abraham en 1759. Dans ce jeu le joueur peux choisir son personnage principal: soit un québecois, soit un anglophone et il va se battre contre la nation qu'il n'a pas choisi. Nouvelle fonctionnalité extra: animation intro avec une description historique de la bataille
+ 
 <img src="castle_crashers.avif" width = "700px">

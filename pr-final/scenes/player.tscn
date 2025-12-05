@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c5h7q5h2nvm6q"]
+
+[node name="Player" type="CharacterBody2D"]
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

@@ -1,19 +1,11 @@
-[gd_scene load_steps=54 format=4 uid="uid://bcn2kn4i6dfja"]
+[gd_scene load_steps=51 format=4 uid="uid://bcn2kn4i6dfja"]
 
 [ext_resource type="Texture2D" uid="uid://b1ftii3nt31cf" path="res://assets/medias/environnement/Background/layer_2.png" id="1_og1vs"]
 [ext_resource type="Texture2D" uid="uid://btdaw857g7fg3" path="res://assets/medias/environnement/Background/layer_1.png" id="1_vxglm"]
 [ext_resource type="Texture2D" uid="uid://ovu87keidabw" path="res://assets/medias/environnement/main_tileset_4x.png" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://bgsny6ap00hyc" path="res://scenes/clef.tscn" id="4_c6pm6"]
-[ext_resource type="Texture2D" uid="uid://cuor4wos8ot1f" path="res://assets/medias/environnement/Decorations/flag_red.png" id="4_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://df51wrtlc3ua1" path="res://assets/medias/environnement/main_tileset_4x_dark.png" id="4_px6nj"]
 [ext_resource type="Texture2D" uid="uid://dq63wepjsci21" path="res://assets/medias/environnement/Decorations/table_noshadow.png" id="5_tefeu"]
-[ext_resource type="Texture2D" uid="uid://b47ehd5pfvt0j" path="res://assets/medias/environnement/Decorations/potions_2.png" id="6_o6xl0"]
-[ext_resource type="Texture2D" uid="uid://3drbi88230nm" path="res://assets/medias/environnement/Decorations/Animated Decorations/candelabrum_small/candelabrum_small_1.png" id="7_gqmmt"]
-[ext_resource type="Texture2D" uid="uid://tjl0qqhh1v6x" path="res://assets/medias/environnement/Decorations/Animated Decorations/candelabrum_small/candelabrum_small_2.png" id="8_yc10j"]
-[ext_resource type="Texture2D" uid="uid://daq4bcxyvhutr" path="res://assets/medias/environnement/Decorations/Animated Decorations/candelabrum_small/candelabrum_small_3.png" id="9_jscy8"]
-[ext_resource type="Texture2D" uid="uid://c5ytibrhejtu1" path="res://assets/medias/environnement/Decorations/Animated Decorations/candelabrum_small/candelabrum_small_4.png" id="10_pm3ni"]
-[ext_resource type="Texture2D" uid="uid://bt6v7xcq5h57c" path="res://assets/medias/environnement/Decorations/Animated Decorations/candelabrum_small/candelabrum_small_5.png" id="11_y6deb"]
-[ext_resource type="Texture2D" uid="uid://bomxufy6bimlk" path="res://assets/medias/environnement/Decorations/Animated Decorations/candelabrum_small/candelabrum_small_6.png" id="12_og1vs"]
 [ext_resource type="Texture2D" uid="uid://c4tn4e5jpyq4t" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small/torch_small_background.png" id="13_2wyq8"]
 [ext_resource type="Texture2D" uid="uid://c8p3sp0nlxn2n" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small/torch_small_1.png" id="14_vxglm"]
 [ext_resource type="Texture2D" uid="uid://c457g1c8dd5l5" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small/torch_small_2.png" id="15_2f3dj"]
@@ -23,14 +15,20 @@
 [ext_resource type="Texture2D" uid="uid://bqcd0xg6ftmpt" path="res://assets/medias/environnement/Decorations/curtain_blue_1.png" id="19_jscy8"]
 [ext_resource type="Texture2D" uid="uid://c1sjlbgtj5kpr" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small/torch_small_6.png" id="19_qkpxi"]
 [ext_resource type="Texture2D" uid="uid://bkqxi8my2gr3f" path="res://assets/medias/environnement/Decorations/sword_2.png" id="21_y6deb"]
+[ext_resource type="Texture2D" uid="uid://bj3rr0ay8366i" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_1.png" id="22_8fdgm"]
 [ext_resource type="Script" uid="uid://coixt7moxny2" path="res://scripts/sword_2.gd" id="22_pm3ni"]
+[ext_resource type="Texture2D" uid="uid://rhu2bsfltcq0" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_2.png" id="23_0a03m"]
+[ext_resource type="Texture2D" uid="uid://c1ukoyfa7yhuu" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_3.png" id="24_ixo1q"]
+[ext_resource type="Texture2D" uid="uid://cc7h1k2rabxwq" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_4.png" id="25_ehqgp"]
 [ext_resource type="Texture2D" uid="uid://cdkxry0ioro7k" path="res://assets/medias/environnement/Decorations/bookshelf_2.png" id="26_fv21b"]
-[ext_resource type="Texture2D" uid="uid://h2cfxo35so02" path="res://assets/medias/environnement/Decorations/Animated Decorations/candelabrum_tall/candelabrum_tall_1.png" id="27_j8jky"]
-[ext_resource type="Texture2D" uid="uid://dk2b04ntbbfbc" path="res://assets/medias/environnement/Decorations/Animated Decorations/candelabrum_tall/candelabrum_tall_2.png" id="28_kmb1v"]
-[ext_resource type="Texture2D" uid="uid://5yfovmjnibu1" path="res://assets/medias/environnement/Decorations/Animated Decorations/candelabrum_tall/candelabrum_tall_3.png" id="29_fuf3a"]
-[ext_resource type="Texture2D" uid="uid://cd7nc4c1cvy7u" path="res://assets/medias/environnement/Decorations/Animated Decorations/candelabrum_tall/candelabrum_tall_4.png" id="30_pibwh"]
-[ext_resource type="Texture2D" uid="uid://bhwcf1c7tt4xy" path="res://assets/medias/environnement/Decorations/Animated Decorations/candelabrum_tall/candelabrum_tall_5.png" id="31_c6pm6"]
-[ext_resource type="Texture2D" uid="uid://cy3ykhsm4xca3" path="res://assets/medias/environnement/Decorations/Animated Decorations/candelabrum_tall/candelabrum_tall_6.png" id="32_5he1u"]
+[ext_resource type="Texture2D" uid="uid://ivnlr5ii2g7w" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_5.png" id="26_fvnup"]
+[ext_resource type="Texture2D" uid="uid://dkny5r7042juc" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_6.png" id="27_vc7k4"]
+[ext_resource type="Texture2D" uid="uid://cwemmvpnea0q5" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small_blue/torch_small_blue_1.png" id="28_co2vd"]
+[ext_resource type="Texture2D" uid="uid://cu106cjupf480" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small_blue/torch_small_blue_2.png" id="29_orbds"]
+[ext_resource type="Texture2D" uid="uid://gqgy2l5iuxfc" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small_blue/torch_small_blue_3.png" id="30_yof60"]
+[ext_resource type="Texture2D" uid="uid://dtdo0sgranqc3" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small_blue/torch_small_blue_4.png" id="31_m822u"]
+[ext_resource type="Texture2D" uid="uid://ba61xoyt6mwuw" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small_blue/torch_small_blue_5.png" id="32_ik6sy"]
+[ext_resource type="Texture2D" uid="uid://b3rj16mj1poqi" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small_blue/torch_small_blue_6.png" id="33_vsc3q"]
 [ext_resource type="PackedScene" uid="uid://b34xwfaej2l26" path="res://assets/medias/environnement/hiori.tscn" id="33_wpycy"]
 [ext_resource type="Texture2D" uid="uid://bonht1wr8hrl7" path="res://assets/medias/environnement/Decorations/window.png" id="34_8fdgm"]
 [ext_resource type="PackedScene" uid="uid://ckxs61ocxwnig" path="res://scenes/platforme_1.tscn" id="34_fuf3a"]
@@ -432,36 +430,6 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_jyhfs")
 sources/2 = SubResource("TileSetAtlasSource_8fdgm")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5q0nq"]
-atlas = ExtResource("7_gqmmt")
-region = Rect2(0, 0, 16, 41)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_dgi5k"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5q0nq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_yc10j")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_jscy8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_pm3ni")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_y6deb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_og1vs")
-}],
-"loop": true,
-"name": &"candelabrum_small",
-"speed": 7.0
-}]
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_j8jky"]
 animations = [{
 "frames": [{
@@ -488,26 +456,52 @@ animations = [{
 "speed": 7.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_5poiv"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_pq224"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("27_j8jky")
+"texture": ExtResource("22_8fdgm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("28_kmb1v")
+"texture": ExtResource("23_0a03m")
 }, {
 "duration": 1.0,
-"texture": ExtResource("29_fuf3a")
+"texture": ExtResource("24_ixo1q")
 }, {
 "duration": 1.0,
-"texture": ExtResource("30_pibwh")
+"texture": ExtResource("25_ehqgp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("31_c6pm6")
+"texture": ExtResource("26_fvnup")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_5he1u")
+"texture": ExtResource("27_vc7k4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7cdo7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_co2vd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_orbds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_yof60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_m822u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ik6sy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_vsc3q")
 }],
 "loop": true,
 "name": &"default",
@@ -539,7 +533,7 @@ size = Vector2(602.344, 33.3333)
 [node name="Environnement" type="Node2D" parent="."]
 
 [node name="bg-img" type="Node2D" parent="Environnement"]
-position = Vector2(-1075, 692)
+position = Vector2(-1459, 772)
 
 [node name="Layer1" type="Sprite2D" parent="Environnement/bg-img"]
 position = Vector2(1267, -602)
@@ -587,34 +581,19 @@ scale = Vector2(2, 2)
 
 [node name="imgs et anims" type="Node2D" parent="Environnement"]
 
-[node name="FlagRed" type="Sprite2D" parent="Environnement/imgs et anims"]
-position = Vector2(709.263, 297)
-scale = Vector2(3.03723, 3.03723)
-texture = ExtResource("4_jyhfs")
-
 [node name="TableNoshadow" type="Sprite2D" parent="Environnement/imgs et anims"]
-position = Vector2(707.263, 508)
+position = Vector2(707.263, 387.99994)
 scale = Vector2(3.47368, 3.47368)
 texture = ExtResource("5_tefeu")
 
-[node name="Potions2" type="Sprite2D" parent="Environnement/imgs et anims"]
-position = Vector2(737.263, 454)
-scale = Vector2(2.51316, 2.51316)
-texture = ExtResource("6_o6xl0")
-
-[node name="candles" type="AnimatedSprite2D" parent="Environnement/imgs et anims"]
-position = Vector2(668.763, 420.5)
-scale = Vector2(2.8125, 2.8125)
-sprite_frames = SubResource("SpriteFrames_dgi5k")
-animation = &"candelabrum_small"
-autoplay = "candelabrum_small"
-
 [node name="TorchSmallBg_1" type="Sprite2D" parent="Environnement/imgs et anims"]
+visible = false
 position = Vector2(211, 250)
 scale = Vector2(4.01, 4.01)
 texture = ExtResource("13_2wyq8")
 
 [node name="torch_small_1" type="AnimatedSprite2D" parent="Environnement/imgs et anims"]
+visible = false
 position = Vector2(213, 217)
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_j8jky")
@@ -633,42 +612,10 @@ scale = Vector2(3.95455, 3.95455)
 texture = ExtResource("21_y6deb")
 script = ExtResource("22_pm3ni")
 
-[node name="TorchSmallBg_2" type="Sprite2D" parent="Environnement/imgs et anims"]
-position = Vector2(2710, 154)
-scale = Vector2(4.01, 4.01)
-texture = ExtResource("13_2wyq8")
-
-[node name="torch_small_2" type="AnimatedSprite2D" parent="Environnement/imgs et anims"]
-position = Vector2(2713, 122)
-scale = Vector2(4, 4)
-sprite_frames = SubResource("SpriteFrames_j8jky")
-autoplay = "default"
-
 [node name="Bookshelf2" type="Sprite2D" parent="Environnement/imgs et anims"]
 position = Vector2(3447, 143.914)
 scale = Vector2(3.67188, 3.67188)
 texture = ExtResource("26_fv21b")
-
-[node name="candelabrum_tall_1" type="AnimatedSprite2D" parent="Environnement/imgs et anims"]
-position = Vector2(3050.5, 154.062)
-scale = Vector2(3.6875, 3.6875)
-sprite_frames = SubResource("SpriteFrames_5poiv")
-autoplay = "default"
-frame_progress = 0.130251
-
-[node name="candelabrum_tall_2" type="AnimatedSprite2D" parent="Environnement/imgs et anims"]
-position = Vector2(1758, -482)
-scale = Vector2(3.6875, 3.6875)
-sprite_frames = SubResource("SpriteFrames_5poiv")
-autoplay = "default"
-frame_progress = 0.58066
-
-[node name="candelabrum_tall_3" type="AnimatedSprite2D" parent="Environnement/imgs et anims"]
-position = Vector2(1507, -482)
-scale = Vector2(3.6875, 3.6875)
-sprite_frames = SubResource("SpriteFrames_5poiv")
-autoplay = "default"
-frame_progress = 0.58066
 
 [node name="DoorOpen" type="Sprite2D" parent="Environnement/imgs et anims"]
 visible = false
@@ -689,12 +636,35 @@ scale = Vector2(0.3871582, 0.3871582)
 texture = ExtResource("34_8fdgm")
 
 [node name="big_window_light" type="PointLight2D" parent="Environnement/imgs et anims"]
+position = Vector2(-45, 61)
 color = Color(0.4251296, 0.6950288, 1, 1)
 energy = 1.84
 shadow_enabled = true
 shadow_color = Color(0, 0, 0, 0.74509805)
 texture = ExtResource("35_ixo1q")
 texture_scale = 11.97
+metadata/_edit_lock_ = true
+
+[node name="blue_candle" type="AnimatedSprite2D" parent="Environnement/imgs et anims"]
+position = Vector2(664, 326)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_pq224")
+autoplay = "default"
+frame_progress = 0.29914632
+
+[node name="torch_blue_no-script" type="AnimatedSprite2D" parent="Environnement/imgs et anims"]
+position = Vector2(718, 225)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_7cdo7")
+autoplay = "default"
+frame_progress = 0.054652065
+
+[node name="blue_candle2" type="AnimatedSprite2D" parent="Environnement/imgs et anims"]
+position = Vector2(776.00006, 321)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_pq224")
+autoplay = "default"
+frame_progress = 0.9424545
 
 [node name="platformes" type="Node" parent="Environnement"]
 
@@ -717,6 +687,7 @@ z_index = 5
 position = Vector2(0, 352.85)
 scale = Vector2(4, 4)
 floor_max_angle = 1.2077678
+metadata/_edit_lock_ = true
 
 [node name="Camera2D" type="Camera2D" parent="Hiori"]
 position = Vector2(26.209623, -2.9939613)
@@ -778,6 +749,7 @@ position = Vector2(3620, 93)
 [node name="CanvasLayer" parent="." instance=ExtResource("38_wpycy")]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
 color = Color(0.13149942, 0.13149942, 0.13149942, 1)
 
 [connection signal="pressed" from="Hiori/Camera2D/CanvasLayer/HUD/Menu" to="Hiori/Camera2D/CanvasLayer/HUD/PauseMenu" method="_on_menu_pressed"]

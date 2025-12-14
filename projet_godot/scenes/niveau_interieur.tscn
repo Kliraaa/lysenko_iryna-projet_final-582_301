@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=4 uid="uid://bcn2kn4i6dfja"]
+[gd_scene load_steps=53 format=4 uid="uid://bcn2kn4i6dfja"]
 
 [ext_resource type="Texture2D" uid="uid://b1ftii3nt31cf" path="res://assets/medias/environnement/Background/layer_2.png" id="1_og1vs"]
 [ext_resource type="Texture2D" uid="uid://btdaw857g7fg3" path="res://assets/medias/environnement/Background/layer_1.png" id="1_vxglm"]
@@ -31,8 +31,10 @@
 [ext_resource type="Texture2D" uid="uid://cd7nc4c1cvy7u" path="res://assets/medias/environnement/Decorations/Animated Decorations/candelabrum_tall/candelabrum_tall_4.png" id="30_pibwh"]
 [ext_resource type="Texture2D" uid="uid://bhwcf1c7tt4xy" path="res://assets/medias/environnement/Decorations/Animated Decorations/candelabrum_tall/candelabrum_tall_5.png" id="31_c6pm6"]
 [ext_resource type="Texture2D" uid="uid://cy3ykhsm4xca3" path="res://assets/medias/environnement/Decorations/Animated Decorations/candelabrum_tall/candelabrum_tall_6.png" id="32_5he1u"]
-[ext_resource type="PackedScene" uid="uid://b34xwfaej2l26" path="res://scenes/hiori.tscn" id="33_wpycy"]
+[ext_resource type="PackedScene" uid="uid://b34xwfaej2l26" path="res://assets/medias/environnement/hiori.tscn" id="33_wpycy"]
+[ext_resource type="Texture2D" uid="uid://bonht1wr8hrl7" path="res://assets/medias/environnement/Decorations/window.png" id="34_8fdgm"]
 [ext_resource type="PackedScene" uid="uid://ckxs61ocxwnig" path="res://scenes/platforme_1.tscn" id="34_fuf3a"]
+[ext_resource type="Texture2D" uid="uid://c4od38kuutou8" path="res://assets/medias/environnement/level-ref.png" id="35_0a03m"]
 [ext_resource type="Texture2D" uid="uid://cb26b7ywdtp4y" path="res://assets/medias/personnages/128x128 textures (41).png" id="36_wpycy"]
 [ext_resource type="PackedScene" uid="uid://dtl186gnjtjmg" path="res://scenes/door_2to3.tscn" id="38_5mecp"]
 [ext_resource type="Script" uid="uid://b30s8nhetk7ua" path="res://scripts/button.gd" id="38_c6pm6"]
@@ -271,8 +273,6 @@ texture_region_size = Vector2i(128, 128)
 texture = ExtResource("4_px6nj")
 texture_region_size = Vector2i(128, 128)
 4:1/0 = 0
-5:1/0 = 0
-6:1/0 = 0
 7:1/0 = 0
 8:1/0 = 0
 9:1/0 = 0
@@ -283,8 +283,6 @@ texture_region_size = Vector2i(128, 128)
 2:2/0 = 0
 3:2/0 = 0
 4:2/0 = 0
-5:2/0 = 0
-6:2/0 = 0
 7:2/0 = 0
 8:2/0 = 0
 10:2/0 = 0
@@ -299,12 +297,8 @@ texture_region_size = Vector2i(128, 128)
 19:2/0 = 0
 20:2/0 = 0
 21:2/0 = 0
-2:3/0 = 0
 3:3/0 = 0
 4:3/0 = 0
-5:3/0 = 0
-6:3/0 = 0
-7:3/0 = 0
 8:3/0 = 0
 10:3/0 = 0
 11:3/0 = 0
@@ -320,12 +314,8 @@ texture_region_size = Vector2i(128, 128)
 21:3/0 = 0
 0:4/0 = 0
 1:4/0 = 0
-2:4/0 = 0
 3:4/0 = 0
 4:4/0 = 0
-5:4/0 = 0
-6:4/0 = 0
-7:4/0 = 0
 8:4/0 = 0
 10:4/0 = 0
 11:4/0 = 0
@@ -339,7 +329,6 @@ texture_region_size = Vector2i(128, 128)
 19:4/0 = 0
 20:4/0 = 0
 21:4/0 = 0
-0:5/0 = 0
 1:5/0 = 0
 2:5/0 = 0
 3:5/0 = 0
@@ -360,10 +349,6 @@ texture_region_size = Vector2i(128, 128)
 19:5/0 = 0
 20:5/0 = 0
 21:5/0 = 0
-0:6/0 = 0
-1:6/0 = 0
-2:6/0 = 0
-3:6/0 = 0
 6:6/0 = 0
 7:6/0 = 0
 8:6/0 = 0
@@ -379,10 +364,6 @@ texture_region_size = Vector2i(128, 128)
 19:6/0 = 0
 20:6/0 = 0
 21:6/0 = 0
-0:7/0 = 0
-1:7/0 = 0
-2:7/0 = 0
-3:7/0 = 0
 6:7/0 = 0
 7:7/0 = 0
 8:7/0 = 0
@@ -403,6 +384,48 @@ texture_region_size = Vector2i(128, 128)
 1:2/0 = 0
 1:3/0 = 0
 2:1/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+5:7/0 = 0
+4:7/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+16:0/0 = 0
+17:0/0 = 0
+17:1/0 = 0
+16:1/0 = 0
+15:1/0 = 0
+14:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+20:1/0 = 0
+21:1/0 = 0
+9:2/0 = 0
+9:3/0 = 0
+9:4/0 = 0
+9:5/0 = 0
+9:6/0 = 0
+9:7/0 = 0
+3:6/size_in_atlas = Vector2i(1, 2)
+3:6/0 = 0
+7:3/0 = 0
+7:4/0 = 0
+5:1/size_in_atlas = Vector2i(2, 1)
+5:1/0 = 0
+5:2/size_in_atlas = Vector2i(2, 1)
+5:2/0 = 0
+5:3/size_in_atlas = Vector2i(2, 1)
+5:3/0 = 0
+5:4/size_in_atlas = Vector2i(2, 1)
+5:4/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_tbgi4"]
 tile_size = Vector2i(64, 64)
@@ -665,6 +688,17 @@ scale = Vector2(-1, 1)
 [node name="platforme4" parent="Environnement/platformes" instance=ExtResource("34_fuf3a")]
 position = Vector2(2080, -64)
 scale = Vector2(-1, 1)
+
+[node name="Window" type="Sprite2D" parent="Environnement"]
+position = Vector2(-45.999756, -7.9999695)
+scale = Vector2(0.40605462, 0.40605462)
+texture = ExtResource("34_8fdgm")
+
+[node name="LevelRef" type="Sprite2D" parent="Environnement"]
+modulate = Color(1, 1, 1, 0.40392157)
+position = Vector2(-56, 1471)
+scale = Vector2(4.2228913, 4.222891)
+texture = ExtResource("35_0a03m")
 
 [node name="Hiori" parent="." instance=ExtResource("33_wpycy")]
 z_index = 5

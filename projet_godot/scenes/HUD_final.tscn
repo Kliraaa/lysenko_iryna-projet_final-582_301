@@ -22,24 +22,24 @@ offset_bottom = 52.96
 layout_mode = 2
 
 [node name="HBoxContainer_TextureRect#Sprite2D" type="Sprite2D" parent="HBoxContainer/Heart1"]
-position = Vector2(28.250004, 86.502525)
-scale = Vector2(0.39, 0.39)
+position = Vector2(28.250004, 70.50252)
+scale = Vector2(0.425, 0.425)
 texture = ExtResource("2_xkap5")
 
 [node name="Heart2" type="TextureRect" parent="HBoxContainer"]
 layout_mode = 2
 
 [node name="HBoxContainer_TextureRect2#Sprite2D" type="Sprite2D" parent="HBoxContainer/Heart2"]
-position = Vector2(111, 86.502525)
-scale = Vector2(0.39, 0.39)
+position = Vector2(111, 70.50252)
+scale = Vector2(0.425, 0.425)
 texture = ExtResource("2_xkap5")
 
 [node name="Heart3" type="TextureRect" parent="HBoxContainer"]
 layout_mode = 2
 
 [node name="HBoxContainer_TextureRect3#Sprite2D" type="Sprite2D" parent="HBoxContainer/Heart3"]
-position = Vector2(195, 86.502525)
-scale = Vector2(0.39, 0.39)
+position = Vector2(195, 70.50252)
+scale = Vector2(0.425, 0.425)
 texture = ExtResource("2_xkap5")
 
 [node name="KeyHUD" type="TextureRect" parent="."]
@@ -48,10 +48,10 @@ anchor_left = 0.23200001
 anchor_top = 0.025
 anchor_right = 0.23200001
 anchor_bottom = 0.025
-offset_left = 6.7359924
-offset_top = -0.20000076
-offset_right = 142.736
-offset_bottom = 82.8
+offset_left = -137.264
+offset_top = 15.799995
+offset_right = -1.263977
+offset_bottom = 98.79999
 
 [node name="Sprite2D" type="Sprite2D" parent="KeyHUD"]
 position = Vector2(56.999985, 32)

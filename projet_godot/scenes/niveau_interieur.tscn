@@ -1,10 +1,11 @@
-[gd_scene load_steps=49 format=4 uid="uid://bcn2kn4i6dfja"]
+[gd_scene load_steps=51 format=4 uid="uid://bcn2kn4i6dfja"]
 
 [ext_resource type="Texture2D" uid="uid://b1ftii3nt31cf" path="res://assets/medias/environnement/Background/layer_2.png" id="1_og1vs"]
 [ext_resource type="Texture2D" uid="uid://btdaw857g7fg3" path="res://assets/medias/environnement/Background/layer_1.png" id="1_vxglm"]
 [ext_resource type="Texture2D" uid="uid://ovu87keidabw" path="res://assets/medias/environnement/main_tileset_4x.png" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://bgsny6ap00hyc" path="res://scenes/clef.tscn" id="4_c6pm6"]
 [ext_resource type="Texture2D" uid="uid://cuor4wos8ot1f" path="res://assets/medias/environnement/Decorations/flag_red.png" id="4_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://df51wrtlc3ua1" path="res://assets/medias/environnement/main_tileset_4x_dark.png" id="4_px6nj"]
 [ext_resource type="Texture2D" uid="uid://dq63wepjsci21" path="res://assets/medias/environnement/Decorations/table_noshadow.png" id="5_tefeu"]
 [ext_resource type="Texture2D" uid="uid://b47ehd5pfvt0j" path="res://assets/medias/environnement/Decorations/potions_2.png" id="6_o6xl0"]
 [ext_resource type="Texture2D" uid="uid://3drbi88230nm" path="res://assets/medias/environnement/Decorations/Animated Decorations/candelabrum_small/candelabrum_small_1.png" id="7_gqmmt"]
@@ -237,8 +238,6 @@ texture_region_size = Vector2i(128, 128)
 0:3/0 = 0
 1:0/0 = 0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.564484, 64.9145, -0.564476, 10.725, -65.479, 10.725, -63.7856, 64.35)
-0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0.564484, 64.9145, 0.564476, 10.725, 65.479, 10.725, 63.7856, 64.35)
 2:0/0 = 0
 2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-46.2868, 0, 63.7856, 0.564468, 64.35, 20.8855, -64.9145, 19.7566)
 3:0/0 = 0
@@ -265,11 +264,151 @@ texture_region_size = Vector2i(128, 128)
 5:2/0 = 0
 5:1/size_in_atlas = Vector2i(2, 1)
 5:1/0 = 0
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0.564484, 64.9145, 0.564476, 10.725, 65.479, 10.725, 63.7856, 64.35)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8fdgm"]
+texture = ExtResource("4_px6nj")
+texture_region_size = Vector2i(128, 128)
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+16:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+20:2/0 = 0
+21:2/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+16:3/0 = 0
+17:3/0 = 0
+18:3/0 = 0
+19:3/0 = 0
+20:3/0 = 0
+21:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+16:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+16:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+16:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+20:6/0 = 0
+21:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+15:7/0 = 0
+16:7/0 = 0
+17:7/0 = 0
+18:7/0 = 0
+19:7/0 = 0
+20:7/0 = 0
+21:7/0 = 0
+0:3/0 = 0
+1:1/0 = 0
+1:2/0 = 0
+1:3/0 = 0
+2:1/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_tbgi4"]
 tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_jyhfs")
+sources/2 = SubResource("TileSetAtlasSource_8fdgm")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5q0nq"]
 atlas = ExtResource("7_gqmmt")
@@ -593,6 +732,7 @@ position = Vector2(3620, 93)
 [node name="CanvasLayer" parent="." instance=ExtResource("38_wpycy")]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
 color = Color(0.13149942, 0.13149942, 0.13149942, 1)
 
 [connection signal="pressed" from="Hiori/Camera2D/CanvasLayer/HUD/Menu" to="Hiori/Camera2D/CanvasLayer/HUD/PauseMenu" method="_on_menu_pressed"]

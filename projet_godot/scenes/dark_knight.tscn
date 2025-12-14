@@ -1,0 +1,89 @@
+[gd_scene load_steps=9 format=3 uid="uid://ch8d8sh0cxrxr"]
+
+[ext_resource type="Texture2D" uid="uid://x84ayy0knvkw" path="res://assets/medias/personnages/brown-knight/idle/idle_knight_1.png" id="1_231py"]
+[ext_resource type="Texture2D" uid="uid://b74kuwnijxui" path="res://assets/medias/personnages/brown-knight/idle/idle_knight_2.png" id="2_7pg70"]
+[ext_resource type="Texture2D" uid="uid://depcqprj33heu" path="res://assets/medias/personnages/brown-knight/idle/idle_knight_3.png" id="3_bepr4"]
+[ext_resource type="Texture2D" uid="uid://mli3jn8arkdh" path="res://assets/medias/personnages/brown-knight/idle/idle_knight_4.png" id="4_w0p00"]
+[ext_resource type="Texture2D" uid="uid://ba43n1baa13ll" path="res://assets/medias/personnages/brown-knight/idle/idle_knight_5.png" id="5_lie3i"]
+[ext_resource type="Texture2D" uid="uid://c2usdbm6klkkk" path="res://assets/medias/personnages/brown-knight/idle/idle_knight_6.png" id="6_jvthh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cf7no"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_231py")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7pg70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_bepr4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_w0p00")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_lie3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_jvthh")
+}],
+"loop": true,
+"name": &"iddle",
+"speed": 7.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pa1ag"]
+radius = 101.292
+height = 204.842
+
+[node name="dark_knight" type="CharacterBody2D"]
+position = Vector2(16, 0)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-3.26855, -11.8715)
+rotation = -3.14159
+scale = Vector2(3.46538, -3.46538)
+sprite_frames = SubResource("SpriteFrames_cf7no")
+animation = &"iddle"
+autoplay = "iddle"
+frame_progress = 0.0602615
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-49.5981, 17.8121)
+shape = SubResource("CapsuleShape2D_pa1ag")
+
+[node name="message" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="message"]
+offset_left = -292.0
+offset_top = -215.0
+offset_right = 84.0
+offset_bottom = -63.0
+color = Color(0.284, 0.4, 0.4, 0.407843)
+metadata/_edit_group_ = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="message/ColorRect"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -375.0
+offset_top = -122.0
+offset_right = -1.0
+offset_bottom = -42.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Tu as tenu ta promesse, tu m'as rapporté mon épée, merci infiniment. Maintenant, mon âme peut reposer en paix."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 15.0
+one_shot = true

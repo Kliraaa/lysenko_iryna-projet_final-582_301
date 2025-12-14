@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://7qg4q0my1i60"]
+
+[ext_resource type="AudioStream" uid="uid://w3x6dwshjt7q" path="res://assets/audio/piano_track.mp3" id="1_05ggv"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_05ggv")
+volume_db = -4.162
+autoplay = true
+bus = &"Bg-music"
+playback_type = 1
+parameters/looping = true

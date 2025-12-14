@@ -1,0 +1,68 @@
+[gd_scene load_steps=10 format=3 uid="uid://dlpu47h53wmw1"]
+
+[ext_resource type="Texture2D" uid="uid://c5gm0bfuj617d" path="res://assets/medias/personnages/crow/Spritesheets/crow-fly.png" id="1_n3e2n"]
+[ext_resource type="Texture2D" uid="uid://b4n6s238c802e" path="res://assets/medias/personnages/crow/Spritesheets/crow-idle.png" id="2_7p4co"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ay1ma"]
+atlas = ExtResource("1_n3e2n")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yvota"]
+atlas = ExtResource("1_n3e2n")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mbwsl"]
+atlas = ExtResource("2_7p4co")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jhwtl"]
+atlas = ExtResource("2_7p4co")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17ys8"]
+atlas = ExtResource("2_7p4co")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tilo8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ay1ma")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yvota")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mbwsl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jhwtl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17ys8")
+}],
+"loop": true,
+"name": &"iddle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n3e2n"]
+radius = 30.887796
+
+[node name="crow" type="CharacterBody2D"]
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_tilo8")
+animation = &"fly"
+frame = 1
+frame_progress = 0.39234722
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-8.9030075, 3.3633575)
+shape = SubResource("CircleShape2D_n3e2n")

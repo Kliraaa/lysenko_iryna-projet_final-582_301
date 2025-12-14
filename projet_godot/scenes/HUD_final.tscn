@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=3 uid="uid://dck6ejhd8oxbg"]
+
+[ext_resource type="Script" uid="uid://c6flu1hfc3vnx" path="res://scripts/hud_final.gd" id="1_y12s3"]
+[ext_resource type="Texture2D" uid="uid://qifhx20vsqce" path="res://assets/medias/environnement/HUD/heart_empty.png" id="2_xkap5"]
+[ext_resource type="Texture2D" uid="uid://dkcuyx8dus6cp" path="res://assets/medias/environnement/HUD/key_empty.png" id="3_xkap5"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_y12s3")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = -1
+anchor_left = 0.031000001
+anchor_top = 0.105000004
+anchor_right = 0.031000001
+anchor_bottom = 0.105000004
+offset_left = -9.712002
+offset_top = -101.04
+offset_right = 321.288
+offset_bottom = 52.96
+
+[node name="Heart1" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer_TextureRect#Sprite2D" type="Sprite2D" parent="HBoxContainer/Heart1"]
+position = Vector2(28.250004, 86.502525)
+scale = Vector2(0.39, 0.39)
+texture = ExtResource("2_xkap5")
+
+[node name="Heart2" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer_TextureRect2#Sprite2D" type="Sprite2D" parent="HBoxContainer/Heart2"]
+position = Vector2(111, 86.502525)
+scale = Vector2(0.39, 0.39)
+texture = ExtResource("2_xkap5")
+
+[node name="Heart3" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer_TextureRect3#Sprite2D" type="Sprite2D" parent="HBoxContainer/Heart3"]
+position = Vector2(195, 86.502525)
+scale = Vector2(0.39, 0.39)
+texture = ExtResource("2_xkap5")
+
+[node name="KeyHUD" type="TextureRect" parent="."]
+anchors_preset = -1
+anchor_left = 0.23200001
+anchor_top = 0.025
+anchor_right = 0.23200001
+anchor_bottom = 0.025
+offset_left = 6.7359924
+offset_top = -0.20000076
+offset_right = 142.736
+offset_bottom = 82.8
+
+[node name="Sprite2D" type="Sprite2D" parent="KeyHUD"]
+position = Vector2(56.999985, 32)
+rotation = -1.5707964
+scale = Vector2(3.5661747, 3.5661747)
+texture = ExtResource("3_xkap5")

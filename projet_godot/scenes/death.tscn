@@ -1,0 +1,151 @@
+[gd_scene load_steps=22 format=3 uid="uid://b5e8w3ke5he0w"]
+
+[ext_resource type="Texture2D" uid="uid://ce3xgkvoddr6v" path="res://assets/medias/personnages/death/Spritesheets/death-lamp-rise.png" id="1_w8wr1"]
+[ext_resource type="Texture2D" uid="uid://xi5076atndeb" path="res://assets/medias/personnages/death/Spritesheets/death-walk.png" id="2_tjai8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q1r8t"]
+atlas = ExtResource("1_w8wr1")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6up1m"]
+atlas = ExtResource("1_w8wr1")
+region = Rect2(32, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w0no0"]
+atlas = ExtResource("1_w8wr1")
+region = Rect2(64, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7205l"]
+atlas = ExtResource("1_w8wr1")
+region = Rect2(96, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2m3wi"]
+atlas = ExtResource("1_w8wr1")
+region = Rect2(128, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3l7jp"]
+atlas = ExtResource("1_w8wr1")
+region = Rect2(160, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shhaa"]
+atlas = ExtResource("1_w8wr1")
+region = Rect2(192, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_npx8y"]
+atlas = ExtResource("1_w8wr1")
+region = Rect2(224, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qttbc"]
+atlas = ExtResource("1_w8wr1")
+region = Rect2(256, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a60g8"]
+atlas = ExtResource("1_w8wr1")
+region = Rect2(288, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_48ncm"]
+atlas = ExtResource("1_w8wr1")
+region = Rect2(320, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h1v4q"]
+atlas = ExtResource("2_tjai8")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vgaw"]
+atlas = ExtResource("2_tjai8")
+region = Rect2(32, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kkd47"]
+atlas = ExtResource("2_tjai8")
+region = Rect2(64, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vp2w"]
+atlas = ExtResource("2_tjai8")
+region = Rect2(96, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qn5sr"]
+atlas = ExtResource("2_tjai8")
+region = Rect2(128, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_isuj8"]
+atlas = ExtResource("2_tjai8")
+region = Rect2(160, 0, 32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tilo8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q1r8t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6up1m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w0no0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7205l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2m3wi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3l7jp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shhaa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_npx8y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qttbc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a60g8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_48ncm")
+}],
+"loop": true,
+"name": &"rise",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h1v4q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vgaw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kkd47")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vp2w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qn5sr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_isuj8")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pgxl1"]
+radius = 25.39823
+
+[node name="death" type="CharacterBody2D"]
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_tilo8")
+animation = &"walk"
+frame_progress = 0.6304137
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(9.156448, 9.646969)
+shape = SubResource("CircleShape2D_pgxl1")

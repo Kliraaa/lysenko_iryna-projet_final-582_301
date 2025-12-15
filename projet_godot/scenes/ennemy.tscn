@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://dg0x3ccdqt0wf"]
+
+[ext_resource type="Texture2D" uid="uid://ci0pub1m26d8l" path="res://assets/medias/personnages/ennemy1-spritesheet.png" id="1_614tr"]
+[ext_resource type="Script" uid="uid://brbfrsucb7xdg" path="res://scripts/ennemy.gd" id="1_rsyu2"]
+[ext_resource type="Texture2D" uid="uid://cbqen3aki3gg" path="res://assets/medias/environnement/Decorations/big_light.png" id="2_rsyu2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n4lfa"]
+atlas = ExtResource("1_614tr")
+region = Rect2(83, 41, 173, 213)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_batjq"]
+atlas = ExtResource("1_614tr")
+region = Rect2(83, 297, 173, 213)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hkdl5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n4lfa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_batjq")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_614tr"]
+size = Vector2(112, 164)
+
+[node name="ennemy" type="Area2D"]
+light_mask = 2
+visibility_layer = 5
+script = ExtResource("1_rsyu2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+rotation = -0.08183278
+sprite_frames = SubResource("SpriteFrames_hkdl5")
+animation = &"walk"
+autoplay = "walk"
+frame_progress = 0.47966787
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-61, -17)
+shape = SubResource("RectangleShape2D_614tr")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(-55.250004, -73.25)
+scale = Vector2(0.30381945, 0.30381945)
+energy = 1.41
+texture = ExtResource("2_rsyu2")

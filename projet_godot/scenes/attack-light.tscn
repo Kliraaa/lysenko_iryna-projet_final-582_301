@@ -86,6 +86,8 @@ animations = [{
 radius = 60.827625
 
 [node name="light_bulb" type="Area2D"]
+light_mask = 4
+visibility_layer = 2
 script = ExtResource("1_jfqj0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

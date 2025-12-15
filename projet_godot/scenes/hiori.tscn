@@ -159,7 +159,7 @@ bus = &"SFX"
 
 [node name="attack_sfx" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_n880o")
-volume_db = -2.0
+volume_db = -5.0
 bus = &"SFX"
 
 [node name="Collision-attack" type="CollisionShape2D" parent="."]

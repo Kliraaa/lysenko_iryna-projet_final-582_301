@@ -63,6 +63,7 @@ scale = Vector2(3.5661747, 3.5661747)
 texture = ExtResource("3_xkap5")
 
 [node name="light_bar" type="TextureProgressBar" parent="."]
+visible = false
 offset_right = 236.0
 offset_bottom = 68.0
 value = 60.0

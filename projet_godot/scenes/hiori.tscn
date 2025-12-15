@@ -161,3 +161,7 @@ bus = &"SFX"
 [node name="Collision-attack" type="CollisionShape2D" parent="."]
 position = Vector2(65.1875, -24.8125)
 shape = SubResource("RectangleShape2D_cdo3n")
+disabled = true
+
+[node name="Muzzle" type="Marker2D" parent="."]
+position = Vector2(13.25, 7)

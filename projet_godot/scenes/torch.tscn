@@ -52,5 +52,6 @@ texture = ExtResource("7_o1df0")
 texture_scale = 1.2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0, 6)
 shape = SubResource("CapsuleShape2D_gybtl")

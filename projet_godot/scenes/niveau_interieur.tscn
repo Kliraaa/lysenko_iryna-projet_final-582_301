@@ -35,7 +35,7 @@
 [ext_resource type="PackedScene" uid="uid://ckxs61ocxwnig" path="res://scenes/platforme_1.tscn" id="34_fuf3a"]
 [ext_resource type="Texture2D" uid="uid://c4od38kuutou8" path="res://assets/medias/environnement/level-ref.png" id="35_0a03m"]
 [ext_resource type="PackedScene" uid="uid://yymgwmh5e5eg" path="res://scenes/torch.tscn" id="35_ehqgp"]
-[ext_resource type="Texture2D" path="res://assets/medias/environnement/Decorations/big_light.png" id="35_ixo1q"]
+[ext_resource type="Texture2D" uid="uid://bcerll0riegie" path="res://assets/medias/environnement/Decorations/light_big.png" id="35_ixo1q"]
 [ext_resource type="Texture2D" uid="uid://cb26b7ywdtp4y" path="res://assets/medias/personnages/128x128 textures (41).png" id="36_wpycy"]
 [ext_resource type="PackedScene" uid="uid://dtl186gnjtjmg" path="res://scenes/door_2to3.tscn" id="38_5mecp"]
 [ext_resource type="Script" uid="uid://b30s8nhetk7ua" path="res://scripts/button.gd" id="38_c6pm6"]
@@ -788,6 +788,7 @@ position = Vector2(3620, 93)
 [node name="CanvasLayer" parent="." instance=ExtResource("38_wpycy")]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
 color = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
 
 [connection signal="pressed" from="Hiori/Camera2D/CanvasLayer/HUD/Menu" to="Hiori/Camera2D/CanvasLayer/HUD/PauseMenu" method="_on_menu_pressed"]

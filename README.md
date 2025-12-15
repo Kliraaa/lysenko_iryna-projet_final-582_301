@@ -1,10 +1,33 @@
 # Concept du projet final en interactivité ludique
 ## Glowfall: Prologue
-J'aimerais faire un jeux vidéo, un prologue d'un niveau, avec mon personnage, une fille avec des pouvoirs magiques dans une cathedrale. Elle est capable de collecter de la lumière et s'éclairer avec, donc ça serait comme une stamina qu'elle collecte. Il y aura des ennemies qu'elle pourrait tuer avec cette lumière. La fille va descendre dans la cathedrale. Une nouvelle fonctionnalité extra: collecter des objets pour attaquer, la lumière autours du personnage.
+
 
 <img src="my_oc.jfif" width = "500px">  <img src="church.jfif" width = "300px">
 
+**Glow Fall** est un court jeu 2D d’exploration et de plateforme, développé dans le cadre d’un projet de collège.
+Le joueur incarne une jeune fille capable de collecter et d’utiliser la lumière.
+En descendant dans une église sombre, elle découvre progressivement comment cette lumière fonctionne et comment s’en servir pour avancer et se défendre.
+
+Le jeu se présente comme un prologue, avec une fin ouverte.
+
+## Gameplay
+
+- Exploration d’un niveau unique
+- Collecte de lumière utilisée comme ressource
+- Interaction avec l’environnement
+- Un affrontement contre un ennemi
+
+## Informations pratiques
+
+- Plateforme : PC (Windows)
+- Durée : ~5 minutes
+- Statut : Projet étudiant / Prologue
+- Prix : Gratuit
+
 ## Crédits
+
+Conception, direction artistique, développement : Iryna Lysenko
+
 ### Visuel
 2D Environment Platformer Asset Pack: Castle of Despair by Brullov on Itch.io https://brullov.itch.io/2d-platformer-asset-pack-castle-of-despair
 Mini Legend Starter Bundle by AlwaysRice on Itch.io https://alwaysrice.itch.io/mini-legend

@@ -70,4 +70,5 @@ text = "Glowfall: Prologue"
 horizontal_alignment = 1
 
 [connection signal="pressed" from="Panel/VBoxContainer/commencer" to="." method="_on_commencer_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/quitter" to="." method="_on_quitter_pressed"]

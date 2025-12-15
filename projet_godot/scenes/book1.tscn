@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://vp2uvfosqqr"]
+
+[ext_resource type="Script" uid="uid://7ux5qcb8d8f3" path="res://scripts/book_1.gd" id="1_4028c"]
+[ext_resource type="Texture2D" uid="uid://b3pmftdgsk7hy" path="res://assets/medias/environnement/Decorations/books.png" id="1_h8vv4"]
+[ext_resource type="AudioStream" uid="uid://dn1tvw4cb1pj3" path="res://assets/audio/page-flip.mp3" id="2_hpqqj"]
+[ext_resource type="Texture2D" uid="uid://bcbib121ir7gv" path="res://assets/medias/environnement/Decorations/book-text.png" id="4_unkjq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hpqqj"]
+radius = 80.0
+
+[node name="book1" type="Area2D"]
+script = ExtResource("1_4028c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("1_h8vv4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_hpqqj")
+
+[node name="book-sfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_hpqqj")
+volume_db = 4.0
+bus = &"SFX"
+
+[node name="message" type="Node2D" parent="."]
+position = Vector2(59.999996, 77.99999)
+scale = Vector2(2.5, 2.5)
+
+[node name="BookText" type="Sprite2D" parent="message"]
+position = Vector2(-83, -111)
+scale = Vector2(0.25781256, 0.25781256)
+texture = ExtResource("4_unkjq")
+
+[node name="Label" type="Label" parent="message/BookText"]
+anchors_preset = -1
+anchor_right = -0.03636365
+offset_left = -207.1272
+offset_top = -154.37567
+offset_right = 242.81213
+offset_bottom = 128.77579
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "Il était une fois, une petite fille qui pouvait récolter les lumières."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+
+[connection signal="body_entered" from="." to="." method="show_message"]
+[connection signal="body_exited" from="." to="." method="hide_message"]

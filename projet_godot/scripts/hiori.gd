@@ -2,11 +2,11 @@ extends CharacterBody2D
 class_name Hiori
 
 const SPEED = 450.0
-const JUMP_VELOCITY = -550.0
+const JUMP_VELOCITY = -560.0
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var run_sfx: AudioStreamPlayer2D = $AudioStreamPlayer2D
-# @onready var death_sfx: AudioStreamPlayer = $death_sound
+# @onready var death_sfx: AudioStreamPlayer2D = $death_sound
 
 
 var taking_damage = false

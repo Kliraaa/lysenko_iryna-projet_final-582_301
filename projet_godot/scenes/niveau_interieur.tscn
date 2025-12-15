@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=4 uid="uid://bcn2kn4i6dfja"]
+[gd_scene load_steps=36 format=4 uid="uid://bcn2kn4i6dfja"]
 
 [ext_resource type="Texture2D" uid="uid://b1ftii3nt31cf" path="res://assets/medias/environnement/Background/layer_2.png" id="1_og1vs"]
 [ext_resource type="Texture2D" uid="uid://btdaw857g7fg3" path="res://assets/medias/environnement/Background/layer_1.png" id="1_vxglm"]
@@ -6,21 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://bgsny6ap00hyc" path="res://scenes/clef.tscn" id="4_c6pm6"]
 [ext_resource type="Texture2D" uid="uid://df51wrtlc3ua1" path="res://assets/medias/environnement/main_tileset_4x_dark.png" id="4_px6nj"]
 [ext_resource type="Texture2D" uid="uid://dq63wepjsci21" path="res://assets/medias/environnement/Decorations/table_noshadow.png" id="5_tefeu"]
-[ext_resource type="Texture2D" uid="uid://c4tn4e5jpyq4t" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small/torch_small_background.png" id="13_2wyq8"]
-[ext_resource type="Texture2D" uid="uid://c8p3sp0nlxn2n" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small/torch_small_1.png" id="14_vxglm"]
-[ext_resource type="Texture2D" uid="uid://c457g1c8dd5l5" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small/torch_small_2.png" id="15_2f3dj"]
-[ext_resource type="Texture2D" uid="uid://bs5elgi0sbw2o" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small/torch_small_3.png" id="16_yq6so"]
-[ext_resource type="Texture2D" uid="uid://c8jssgo4r2st0" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small/torch_small_4.png" id="17_fv21b"]
-[ext_resource type="Texture2D" uid="uid://0ljxjsrpbktd" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small/torch_small_5.png" id="18_tel4y"]
-[ext_resource type="Texture2D" uid="uid://bqcd0xg6ftmpt" path="res://assets/medias/environnement/Decorations/curtain_blue_1.png" id="19_jscy8"]
-[ext_resource type="Texture2D" uid="uid://c1sjlbgtj5kpr" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small/torch_small_6.png" id="19_qkpxi"]
-[ext_resource type="Texture2D" uid="uid://bkqxi8my2gr3f" path="res://assets/medias/environnement/Decorations/sword_2.png" id="21_y6deb"]
 [ext_resource type="Texture2D" uid="uid://bj3rr0ay8366i" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_1.png" id="22_8fdgm"]
-[ext_resource type="Script" uid="uid://coixt7moxny2" path="res://scripts/sword_2.gd" id="22_pm3ni"]
 [ext_resource type="Texture2D" uid="uid://rhu2bsfltcq0" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_2.png" id="23_0a03m"]
 [ext_resource type="Texture2D" uid="uid://c1ukoyfa7yhuu" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_3.png" id="24_ixo1q"]
+[ext_resource type="PackedScene" uid="uid://vp2uvfosqqr" path="res://scenes/book1.tscn" id="24_q516x"]
 [ext_resource type="Texture2D" uid="uid://cc7h1k2rabxwq" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_4.png" id="25_ehqgp"]
-[ext_resource type="Texture2D" uid="uid://cdkxry0ioro7k" path="res://assets/medias/environnement/Decorations/bookshelf_2.png" id="26_fv21b"]
 [ext_resource type="Texture2D" uid="uid://ivnlr5ii2g7w" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_5.png" id="26_fvnup"]
 [ext_resource type="Texture2D" uid="uid://dkny5r7042juc" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_6.png" id="27_vc7k4"]
 [ext_resource type="Texture2D" uid="uid://cwemmvpnea0q5" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small_blue/torch_small_blue_1.png" id="28_co2vd"]
@@ -32,16 +22,13 @@
 [ext_resource type="PackedScene" uid="uid://b34xwfaej2l26" path="res://scenes/hiori.tscn" id="33_wpycy"]
 [ext_resource type="Texture2D" uid="uid://btsh3145kaq5" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_big_blue/torch_big_blue_empty.png" id="34_0a03m"]
 [ext_resource type="Texture2D" uid="uid://bonht1wr8hrl7" path="res://assets/medias/environnement/Decorations/window.png" id="34_8fdgm"]
-[ext_resource type="PackedScene" uid="uid://bkdc68ocspni6" path="res://scenes/door_1to2.tscn" id="34_ixo1q"]
-[ext_resource type="Texture2D" uid="uid://c4od38kuutou8" path="res://assets/medias/environnement/level-ref.png" id="35_0a03m"]
+[ext_resource type="PackedScene" uid="uid://bkdc68ocspni6" path="res://scenes/door.tscn" id="34_ixo1q"]
 [ext_resource type="PackedScene" uid="uid://yymgwmh5e5eg" path="res://scenes/torch.tscn" id="35_ehqgp"]
 [ext_resource type="Texture2D" uid="uid://cbqen3aki3gg" path="res://assets/medias/environnement/Decorations/big_light.png" id="35_ixo1q"]
 [ext_resource type="Texture2D" uid="uid://cb26b7ywdtp4y" path="res://assets/medias/personnages/128x128 textures (41).png" id="36_wpycy"]
-[ext_resource type="PackedScene" uid="uid://dtl186gnjtjmg" path="res://scenes/door_2to3.tscn" id="38_5mecp"]
 [ext_resource type="Script" uid="uid://b30s8nhetk7ua" path="res://scripts/button.gd" id="38_c6pm6"]
 [ext_resource type="PackedScene" uid="uid://dck6ejhd8oxbg" path="res://scenes/HUD_final.tscn" id="38_wpycy"]
 [ext_resource type="PackedScene" uid="uid://cqfjewwe1ylh1" path="res://scenes/pause_menu.tscn" id="39_5he1u"]
-[ext_resource type="Texture2D" uid="uid://c15nvppn5ij34" path="res://assets/medias/environnement/Decorations/door_open.png" id="39_wpycy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jyhfs"]
 texture = ExtResource("3_sugp2")
@@ -431,32 +418,6 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_jyhfs")
 sources/2 = SubResource("TileSetAtlasSource_8fdgm")
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_j8jky"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("14_vxglm")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_2f3dj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_yq6so")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_fv21b")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_tel4y")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_qkpxi")
-}],
-"loop": true,
-"name": &"default",
-"speed": 7.0
-}]
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_pq224"]
 animations = [{
 "frames": [{
@@ -592,49 +553,10 @@ position = Vector2(747.263, 379.99994)
 scale = Vector2(3.47368, 3.47368)
 texture = ExtResource("5_tefeu")
 
-[node name="TorchSmallBg_1" type="Sprite2D" parent="Environnement/imgs et anims"]
-visible = false
-position = Vector2(211, 250)
-scale = Vector2(4.01, 4.01)
-texture = ExtResource("13_2wyq8")
-
-[node name="torch_small_1" type="AnimatedSprite2D" parent="Environnement/imgs et anims"]
-visible = false
-position = Vector2(213, 217)
-scale = Vector2(4, 4)
-sprite_frames = SubResource("SpriteFrames_j8jky")
-autoplay = "default"
-
-[node name="CurtainBlue1" type="Sprite2D" parent="Environnement/imgs et anims"]
-visible = false
-position = Vector2(-349, 219)
-scale = Vector2(3.32979, 3.32979)
-texture = ExtResource("19_jscy8")
-
-[node name="Sword2" type="Sprite2D" parent="Environnement/imgs et anims"]
-visible = false
-position = Vector2(-614, 261)
-scale = Vector2(3.95455, 3.95455)
-texture = ExtResource("21_y6deb")
-script = ExtResource("22_pm3ni")
-
-[node name="Bookshelf2" type="Sprite2D" parent="Environnement/imgs et anims"]
-position = Vector2(3447, 143.914)
-scale = Vector2(3.67188, 3.67188)
-texture = ExtResource("26_fv21b")
-
-[node name="DoorOpen" type="Sprite2D" parent="Environnement/imgs et anims"]
-visible = false
-position = Vector2(-64, 305)
-scale = Vector2(3.76829, 3.76829)
-texture = ExtResource("39_wpycy")
-
-[node name="LevelRef" type="Sprite2D" parent="Environnement/imgs et anims"]
-visible = false
-modulate = Color(1, 1, 1, 0.58431375)
-position = Vector2(-4.0000644, 1627)
-scale = Vector2(7.655, 7.655)
-texture = ExtResource("35_0a03m")
+[node name="TableNoshadow2" type="Sprite2D" parent="Environnement/imgs et anims"]
+position = Vector2(-98.73697, 1147.5)
+scale = Vector2(3.47368, 3.47368)
+texture = ExtResource("5_tefeu")
 
 [node name="Window" type="Sprite2D" parent="Environnement/imgs et anims"]
 position = Vector2(0, -4.000002)
@@ -658,26 +580,12 @@ sprite_frames = SubResource("SpriteFrames_pq224")
 autoplay = "default"
 frame_progress = 0.25456807
 
-[node name="torch_blue_no-script" type="AnimatedSprite2D" parent="Environnement/imgs et anims"]
-position = Vector2(581, 209)
-scale = Vector2(4, 4)
-sprite_frames = SubResource("SpriteFrames_7cdo7")
-autoplay = "default"
-frame_progress = 0.8800264
-
 [node name="blue_candle2" type="AnimatedSprite2D" parent="Environnement/imgs et anims"]
 position = Vector2(816.00006, 313)
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_pq224")
 autoplay = "default"
 frame_progress = 0.89789385
-
-[node name="Sprite2D" type="Sprite2D" parent="Environnement/imgs et anims"]
-
-[node name="TableNoshadow2" type="Sprite2D" parent="Environnement/imgs et anims"]
-position = Vector2(-98.73697, 1147.5)
-scale = Vector2(3.47368, 3.47368)
-texture = ExtResource("5_tefeu")
 
 [node name="blue_candle3" type="AnimatedSprite2D" parent="Environnement/imgs et anims"]
 position = Vector2(-165, 1080)
@@ -690,45 +598,57 @@ frame_progress = 0.90884703
 visible = false
 position = Vector2(-758, 2368)
 
-[node name="empty_big_torch1-1" type="Sprite2D" parent="Environnement/imgs et anims"]
+[node name="torches" type="Node2D" parent="Environnement/imgs et anims"]
+
+[node name="empty_big_torch1-1" type="Sprite2D" parent="Environnement/imgs et anims/torches"]
 position = Vector2(-178, 657.00006)
 scale = Vector2(4, 4)
 texture = ExtResource("34_0a03m")
 
-[node name="empty_big_torch1-2" type="Sprite2D" parent="Environnement/imgs et anims"]
+[node name="empty_big_torch1-2" type="Sprite2D" parent="Environnement/imgs et anims/torches"]
 position = Vector2(0, 657)
 scale = Vector2(4, 4)
 texture = ExtResource("34_0a03m")
 
-[node name="empty_big_torch1-3" type="Sprite2D" parent="Environnement/imgs et anims"]
+[node name="empty_big_torch1-3" type="Sprite2D" parent="Environnement/imgs et anims/torches"]
 position = Vector2(178, 657)
 scale = Vector2(4, 4)
 texture = ExtResource("34_0a03m")
 
-[node name="empty_big_torch2-1" type="Sprite2D" parent="Environnement/imgs et anims"]
+[node name="empty_big_torch2-1" type="Sprite2D" parent="Environnement/imgs et anims/torches"]
 position = Vector2(-64, 2385)
 scale = Vector2(4, 4)
 texture = ExtResource("34_0a03m")
 
-[node name="empty_big_torch2-2" type="Sprite2D" parent="Environnement/imgs et anims"]
+[node name="empty_big_torch2-2" type="Sprite2D" parent="Environnement/imgs et anims/torches"]
 position = Vector2(318, 2385)
 scale = Vector2(4, 4)
 texture = ExtResource("34_0a03m")
 
-[node name="torch1-1" parent="Environnement/imgs et anims" instance=ExtResource("35_ehqgp")]
+[node name="torch1-1" parent="Environnement/imgs et anims/torches" instance=ExtResource("35_ehqgp")]
 position = Vector2(-178, 657)
 
-[node name="torch1-2" parent="Environnement/imgs et anims" instance=ExtResource("35_ehqgp")]
+[node name="torch1-2" parent="Environnement/imgs et anims/torches" instance=ExtResource("35_ehqgp")]
 position = Vector2(0, 657)
 
-[node name="torch1-3" parent="Environnement/imgs et anims" instance=ExtResource("35_ehqgp")]
+[node name="torch1-3" parent="Environnement/imgs et anims/torches" instance=ExtResource("35_ehqgp")]
 position = Vector2(178, 657)
 
-[node name="torch2-1" parent="Environnement/imgs et anims" instance=ExtResource("35_ehqgp")]
+[node name="torch2-1" parent="Environnement/imgs et anims/torches" instance=ExtResource("35_ehqgp")]
 position = Vector2(-64, 2385)
 
-[node name="torch2-2" parent="Environnement/imgs et anims" instance=ExtResource("35_ehqgp")]
+[node name="torch2-2" parent="Environnement/imgs et anims/torches" instance=ExtResource("35_ehqgp")]
 position = Vector2(318, 2385)
+
+[node name="torch_blue_no-script" type="AnimatedSprite2D" parent="Environnement/imgs et anims/torches"]
+position = Vector2(581, 209)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_7cdo7")
+autoplay = "default"
+frame_progress = 0.8800264
+
+[node name="book1" parent="Environnement/imgs et anims" instance=ExtResource("24_q516x")]
+position = Vector2(756, 332)
 
 [node name="Hiori" parent="." instance=ExtResource("33_wpycy")]
 z_index = 5
@@ -769,9 +689,6 @@ position = Vector2(0.20161343, -0.37298584)
 scale = Vector2(1.1526712, 1.1526712)
 energy = 1.47
 texture = ExtResource("36_wpycy")
-
-[node name="door" parent="." instance=ExtResource("38_5mecp")]
-position = Vector2(3620, 93)
 
 [node name="CanvasLayer" parent="." instance=ExtResource("38_wpycy")]
 

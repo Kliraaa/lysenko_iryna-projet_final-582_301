@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmtq03qftbvm5"
-path="res://.godot/imported/curtain_red_2.png-36746731d08fc15644ce73e34b9ef1c7.ctex"
+uid="uid://bcbib121ir7gv"
+path="res://.godot/imported/book-text.png-06dd8bf5cd55b1b0850901e8b877304f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/medias/environnement/Decorations/curtain_red_2.png"
-dest_files=["res://.godot/imported/curtain_red_2.png-36746731d08fc15644ce73e34b9ef1c7.ctex"]
+source_file="res://assets/medias/environnement/Decorations/book-text.png"
+dest_files=["res://.godot/imported/book-text.png-06dd8bf5cd55b1b0850901e8b877304f.ctex"]
 
 [params]
 

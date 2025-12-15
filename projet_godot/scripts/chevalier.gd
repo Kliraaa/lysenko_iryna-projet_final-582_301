@@ -6,7 +6,7 @@ const JUMP_VELOCITY = -550.0
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var audio_stream_player_2d: AudioStreamPlayer2D = $AudioStreamPlayer2D
-@onready var death_sfx: AudioStreamPlayer = $death_sound
+#@onready var death_sfx: AudioStreamPlayer = $death_sound
 
 
 var taking_damage = false
@@ -73,4 +73,4 @@ func take_damage():
 		hud.update_hearts(hud.health)
 		
 	taking_damage = true
-	death_sfx.play()
+	#death_sfx.play()

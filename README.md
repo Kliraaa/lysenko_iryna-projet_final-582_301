@@ -2,7 +2,7 @@
 ## Glowfall: Prologue
 
 
-<img src="my_oc.jfif" width = "500px">  <img src="church.jfif" width = "300px">
+<img src="screen_blue.png">
 
 **Glow Fall** est un court jeu 2D d’exploration et de plateforme, développé dans le cadre d’un projet de collège.
 Le joueur incarne une jeune fille capable de collecter et d’utiliser la lumière.

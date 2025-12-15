@@ -32,7 +32,7 @@
 [ext_resource type="PackedScene" uid="uid://b34xwfaej2l26" path="res://scenes/hiori.tscn" id="33_wpycy"]
 [ext_resource type="Texture2D" uid="uid://btsh3145kaq5" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_big_blue/torch_big_blue_empty.png" id="34_0a03m"]
 [ext_resource type="Texture2D" uid="uid://bonht1wr8hrl7" path="res://assets/medias/environnement/Decorations/window.png" id="34_8fdgm"]
-[ext_resource type="PackedScene" uid="uid://ckxs61ocxwnig" path="res://scenes/platforme_1.tscn" id="34_fuf3a"]
+[ext_resource type="PackedScene" uid="uid://bkdc68ocspni6" path="res://scenes/door_1to2.tscn" id="34_ixo1q"]
 [ext_resource type="Texture2D" uid="uid://c4od38kuutou8" path="res://assets/medias/environnement/level-ref.png" id="35_0a03m"]
 [ext_resource type="PackedScene" uid="uid://yymgwmh5e5eg" path="res://scenes/torch.tscn" id="35_ehqgp"]
 [ext_resource type="Texture2D" uid="uid://cbqen3aki3gg" path="res://assets/medias/environnement/Decorations/big_light.png" id="35_ixo1q"]
@@ -578,7 +578,7 @@ tile_set = SubResource("TileSet_tbgi4")
 
 [node name="Floor" type="TileMapLayer" parent="Environnement"]
 position = Vector2(32, -7)
-tile_map_data = PackedByteArray("AAD6/wcAAQAPAAEAAAD8/wcAAQAUAAEAAAD+/wcAAQATAAYAAAAAAAcAAQAUAAIAAAABAAcAAQATAAYAAAACAAcAAQATAAYAAADx/wIAAQABAAMAAADx/wQAAQABAAMAAADx/wYAAQABAAMAAAANAAIAAQADAAMAAAANAAQAAQADAAQAAAAIAAcAAQATAAYAAAAKAAcAAQATAAYAAAAEAAcAAQATAAYAAAAGAAcAAQATAAYAAADx/wcAAQAOAAEAAADx/wkAAQAOAAIAAADx/wsAAQAOAAIAAAANAAUAAQADAAQAAAD4/wcAAQASAAIAAAD1/wkAAQAOAAUAAAD3/wsAAQAOAAUAAAD1/wcAAQAOAAQAAAD3/wkAAQAOAAQAAAD5/wsAAQAOAAQAAADz/wcAAQAQAAEAAAD5/w0AAQAOAAUAAAD7/w0AAQAQAAEAAAD9/w0AAQAQAAEAAAD//w0AAQAQAAEAAAAMAAcAAQAVAAEAAAAOAAcAAQARAAEAAAD3/wcAAgABAAQAAAD7/xMAAQAQAAEAAAD9/xMAAQAQAAEAAAD//xMAAQAQAAEAAAANAA0AAQARAAEAAAADABMAAQAQAAEAAAAFABMAAQAPAAUAAAAHABEAAQAPAAUAAAAJAA0AAQAPAAQAAAAJAA8AAQAPAAUAAAABABMAAQAQAAEAAAAFABEAAQAPAAQAAAAHAA8AAQAPAAQAAAALAA0AAQAQAAEAAAADAA0AAQAQAAEAAAAFAA0AAQATAAIAAAABAA0AAQAQAAEAAADy/xkAAQAOAAEAAADy/xsAAQAOAAIAAADy/x0AAQAOAAIAAAD0/xkAAQAQAAEAAAD2/xkAAQAQAAEAAAD4/xkAAQAOAAQAAAD4/xsAAQAOAAUAAAD6/xsAAQAOAAQAAAD6/x0AAQAOAAUAAAD8/x0AAQAOAAQAAAD8/x8AAQAOAAUAAAD+/x8AAQAQAAEAAAAAAB8AAQAQAAEAAAACAB8AAQAQAAEAAAAEAB8AAQAQAAEAAAAGAB8AAQAQAAEAAAAIAB8AAQAQAAEAAAAKAB8AAQATAAIAAADy/xMAAQAOAAEAAAD0/xMAAQATAAIAAAAAACkAAQATAAYAAAACACkAAQATAAYAAAAEACkAAQATAAYAAAAGACkAAQATAAYAAAAIACkAAQATAAYAAAAKACkAAQATAAYAAAAMACkAAQAVAAEAAAAOACkAAQARAAEAAAD4/ykAAQATAAYAAAD6/ykAAQATAAYAAAD8/ykAAQATAAYAAAD+/ykAAQATAAYAAADy/ycAAgABAAQAAADy/yUAAgABAAMAAADy/yMAAgABAAMAAADy/yEAAgABAAIAAAD0/yEAAgACAAIAAAD2/yEAAgADAAIAAAD2/yMAAgADAAMAAAD2/yUAAgADAAQAAAD2/ycAAgADAAQAAADw/ykAAQAOAAEAAADy/ykAAQAUAAEAAAD0/ykAAQATAAYAAAD2/ykAAQAUAAIAAAD3/xMAAQASAAIAAAD5/xMAAQAQAAEAAAA=")
+tile_map_data = PackedByteArray("AAD6/wcAAQAPAAEAAAD8/wcAAQAUAAEAAAD+/wcAAQATAAYAAAAAAAcAAQAUAAIAAAABAAcAAQATAAYAAAACAAcAAQATAAYAAADx/wIAAQABAAMAAADx/wQAAQABAAMAAADx/wYAAQABAAMAAAANAAIAAQADAAMAAAANAAQAAQADAAQAAAAIAAcAAQATAAYAAAAKAAcAAQATAAYAAAAEAAcAAQATAAYAAAAGAAcAAQATAAYAAADx/wcAAQAOAAEAAADx/wkAAQAOAAIAAADx/wsAAQAOAAIAAAANAAUAAQADAAQAAAD4/wcAAQASAAIAAAD1/wkAAQAOAAUAAAD3/wsAAQAOAAUAAAD1/wcAAQAOAAQAAAD3/wkAAQAOAAQAAAD5/wsAAQAOAAQAAADz/wcAAQAQAAEAAAD5/w0AAQAOAAUAAAD7/w0AAQAQAAEAAAD9/w0AAQAQAAEAAAD//w0AAQAQAAEAAAAMAAcAAQAVAAEAAAAOAAcAAQARAAEAAAD3/wcAAgABAAQAAAD7/xMAAQAQAAEAAAD9/xMAAQAQAAEAAAD//xMAAQAQAAEAAAANAA0AAQARAAEAAAADABMAAQAQAAEAAAAFABMAAQAPAAUAAAAHABEAAQAPAAUAAAAJAA0AAQAPAAQAAAAJAA8AAQAPAAUAAAABABMAAQAQAAEAAAAFABEAAQAPAAQAAAAHAA8AAQAPAAQAAAALAA0AAQAQAAEAAAADAA0AAQAQAAEAAAAFAA0AAQATAAIAAAABAA0AAQAQAAEAAADy/xkAAQAOAAEAAADy/xsAAQAOAAIAAADy/x0AAQAOAAIAAAD0/xkAAQAQAAEAAAD2/xkAAQAQAAEAAAD4/xkAAQAOAAQAAAD4/xsAAQAOAAUAAAD6/xsAAQAOAAQAAAD6/x0AAQAOAAUAAAD8/x0AAQAOAAQAAAD8/x8AAQAOAAUAAAD+/x8AAQAQAAEAAAAAAB8AAQAQAAEAAAACAB8AAQAQAAEAAAAEAB8AAQAQAAEAAAAGAB8AAQAQAAEAAAAIAB8AAQAQAAEAAAAKAB8AAQATAAIAAADy/xMAAQAOAAEAAAD0/xMAAQATAAIAAAAAACkAAQATAAYAAAACACkAAQATAAYAAAAEACkAAQATAAYAAAAGACkAAQATAAYAAAAIACkAAQATAAYAAAAKACkAAQATAAYAAAAMACkAAQAVAAEAAAAOACkAAQARAAEAAAD4/ykAAQATAAYAAAD6/ykAAQATAAYAAAD8/ykAAQATAAYAAAD+/ykAAQATAAYAAADy/ycAAgABAAQAAADy/yUAAgABAAMAAADy/yMAAgABAAMAAADy/yEAAgABAAIAAAD0/yEAAgACAAIAAAD2/yEAAgADAAIAAAD2/yMAAgADAAMAAAD2/yUAAgADAAQAAAD2/ycAAgADAAQAAADw/ykAAQAOAAEAAADy/ykAAQAUAAEAAAD0/ykAAQATAAYAAAD3/xMAAQASAAIAAAD5/xMAAQAQAAEAAAD2/ykAAQATAAYAAAA=")
 tile_set = SubResource("TileSet_tbgi4")
 
 [node name="clef" parent="Environnement" instance=ExtResource("4_c6pm6")]
@@ -686,6 +686,10 @@ sprite_frames = SubResource("SpriteFrames_pq224")
 autoplay = "default"
 frame_progress = 0.90884703
 
+[node name="door" parent="Environnement/imgs et anims" instance=ExtResource("34_ixo1q")]
+visible = false
+position = Vector2(-758, 2368)
+
 [node name="empty_big_torch1-1" type="Sprite2D" parent="Environnement/imgs et anims"]
 position = Vector2(-178, 657.00006)
 scale = Vector2(4, 4)
@@ -720,31 +724,15 @@ position = Vector2(0, 657)
 [node name="torch1-3" parent="Environnement/imgs et anims" instance=ExtResource("35_ehqgp")]
 position = Vector2(178, 657)
 
-[node name="torch1-4" parent="Environnement/imgs et anims" instance=ExtResource("35_ehqgp")]
-position = Vector2(-66, 2385)
+[node name="torch2-1" parent="Environnement/imgs et anims" instance=ExtResource("35_ehqgp")]
+position = Vector2(-64, 2385)
 
-[node name="torch1-5" parent="Environnement/imgs et anims" instance=ExtResource("35_ehqgp")]
+[node name="torch2-2" parent="Environnement/imgs et anims" instance=ExtResource("35_ehqgp")]
 position = Vector2(318, 2385)
-
-[node name="platformes" type="Node" parent="Environnement"]
-
-[node name="platforme1" parent="Environnement/platformes" instance=ExtResource("34_fuf3a")]
-position = Vector2(2399, 64)
-
-[node name="platforme2" parent="Environnement/platformes" instance=ExtResource("34_fuf3a")]
-position = Vector2(2400, -192)
-
-[node name="platforme3" parent="Environnement/platformes" instance=ExtResource("34_fuf3a")]
-position = Vector2(2081, 191)
-scale = Vector2(-1, 1)
-
-[node name="platforme4" parent="Environnement/platformes" instance=ExtResource("34_fuf3a")]
-position = Vector2(2080, -64)
-scale = Vector2(-1, 1)
 
 [node name="Hiori" parent="." instance=ExtResource("33_wpycy")]
 z_index = 5
-position = Vector2(0, -10)
+position = Vector2(0, 198)
 scale = Vector2(4, 4)
 floor_max_angle = 1.2077678
 

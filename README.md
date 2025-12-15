@@ -19,7 +19,7 @@ Le jeu se présente comme un prologue, avec une fin ouverte.
 
 ## Informations pratiques
 
-- Plateforme : PC (Windows)
+- Plateforme : Web
 - Durée : ~5 minutes
 - Statut : Projet étudiant / Prologue
 - Prix : Gratuit

@@ -5,7 +5,7 @@ func _ready() -> void:
 
 func show_message(_body):
 	if _body is Hiori:
-		print("message1")
+		print("message")
 		$Timer.start()
 		$message.show()
 		$"book-sfx".play()

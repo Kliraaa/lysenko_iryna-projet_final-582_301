@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://b1ftii3nt31cf" path="res://assets/medias/environnement/Background/layer_2.png" id="1_og1vs"]
 [ext_resource type="Texture2D" uid="uid://btdaw857g7fg3" path="res://assets/medias/environnement/Background/layer_1.png" id="1_vxglm"]
 [ext_resource type="Texture2D" uid="uid://ovu87keidabw" path="res://assets/medias/environnement/main_tileset_4x.png" id="3_sugp2"]
-[ext_resource type="PackedScene" uid="uid://bgsny6ap00hyc" path="res://scenes/clef.tscn" id="4_c6pm6"]
 [ext_resource type="Texture2D" uid="uid://df51wrtlc3ua1" path="res://assets/medias/environnement/main_tileset_4x_dark.png" id="4_px6nj"]
 [ext_resource type="Texture2D" uid="uid://dq63wepjsci21" path="res://assets/medias/environnement/Decorations/table_noshadow.png" id="5_tefeu"]
 [ext_resource type="Texture2D" uid="uid://bj3rr0ay8366i" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_1.png" id="22_8fdgm"]
@@ -11,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://c1ukoyfa7yhuu" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_3.png" id="24_ixo1q"]
 [ext_resource type="PackedScene" uid="uid://vp2uvfosqqr" path="res://scenes/book1.tscn" id="24_q516x"]
 [ext_resource type="Texture2D" uid="uid://cc7h1k2rabxwq" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_4.png" id="25_ehqgp"]
+[ext_resource type="PackedScene" uid="uid://bc65a7eo0j45a" path="res://scenes/book2.tscn" id="25_lyjg7"]
 [ext_resource type="Texture2D" uid="uid://ivnlr5ii2g7w" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_5.png" id="26_fvnup"]
 [ext_resource type="Texture2D" uid="uid://dkny5r7042juc" path="res://assets/medias/environnement/Decorations/Animated Decorations/candle_blue_3/candle_blue_3_6.png" id="27_vc7k4"]
 [ext_resource type="Texture2D" uid="uid://cwemmvpnea0q5" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_small_blue/torch_small_blue_1.png" id="28_co2vd"]
@@ -542,10 +542,6 @@ position = Vector2(32, -7)
 tile_map_data = PackedByteArray("AAD6/wcAAQAPAAEAAAD8/wcAAQAUAAEAAAD+/wcAAQATAAYAAAAAAAcAAQAUAAIAAAABAAcAAQATAAYAAAACAAcAAQATAAYAAADx/wIAAQABAAMAAADx/wQAAQABAAMAAADx/wYAAQABAAMAAAANAAIAAQADAAMAAAANAAQAAQADAAQAAAAIAAcAAQATAAYAAAAKAAcAAQATAAYAAAAEAAcAAQATAAYAAAAGAAcAAQATAAYAAADx/wcAAQAOAAEAAADx/wkAAQAOAAIAAADx/wsAAQAOAAIAAAANAAUAAQADAAQAAAD4/wcAAQASAAIAAAD1/wkAAQAOAAUAAAD3/wsAAQAOAAUAAAD1/wcAAQAOAAQAAAD3/wkAAQAOAAQAAAD5/wsAAQAOAAQAAADz/wcAAQAQAAEAAAD5/w0AAQAOAAUAAAD7/w0AAQAQAAEAAAD9/w0AAQAQAAEAAAD//w0AAQAQAAEAAAAMAAcAAQAVAAEAAAAOAAcAAQARAAEAAAD3/wcAAgABAAQAAAD7/xMAAQAQAAEAAAD9/xMAAQAQAAEAAAD//xMAAQAQAAEAAAANAA0AAQARAAEAAAADABMAAQAQAAEAAAAFABMAAQAPAAUAAAAHABEAAQAPAAUAAAAJAA0AAQAPAAQAAAAJAA8AAQAPAAUAAAABABMAAQAQAAEAAAAFABEAAQAPAAQAAAAHAA8AAQAPAAQAAAALAA0AAQAQAAEAAAADAA0AAQAQAAEAAAAFAA0AAQATAAIAAAABAA0AAQAQAAEAAADy/xkAAQAOAAEAAADy/xsAAQAOAAIAAADy/x0AAQAOAAIAAAD0/xkAAQAQAAEAAAD2/xkAAQAQAAEAAAD4/xkAAQAOAAQAAAD4/xsAAQAOAAUAAAD6/xsAAQAOAAQAAAD6/x0AAQAOAAUAAAD8/x0AAQAOAAQAAAD8/x8AAQAOAAUAAAD+/x8AAQAQAAEAAAAAAB8AAQAQAAEAAAACAB8AAQAQAAEAAAAEAB8AAQAQAAEAAAAGAB8AAQAQAAEAAAAIAB8AAQAQAAEAAAAKAB8AAQATAAIAAADy/xMAAQAOAAEAAAD0/xMAAQATAAIAAAAAACkAAQATAAYAAAACACkAAQATAAYAAAAEACkAAQATAAYAAAAGACkAAQATAAYAAAAIACkAAQATAAYAAAAKACkAAQATAAYAAAAMACkAAQAVAAEAAAAOACkAAQARAAEAAAD4/ykAAQATAAYAAAD6/ykAAQATAAYAAAD8/ykAAQATAAYAAAD+/ykAAQATAAYAAADy/ycAAgABAAQAAADy/yUAAgABAAMAAADy/yMAAgABAAMAAADy/yEAAgABAAIAAAD0/yEAAgACAAIAAAD2/yEAAgADAAIAAAD2/yMAAgADAAMAAAD2/yUAAgADAAQAAAD2/ycAAgADAAQAAADw/ykAAQAOAAEAAADy/ykAAQAUAAEAAAD0/ykAAQATAAYAAAD3/xMAAQASAAIAAAD5/xMAAQAQAAEAAAD2/ykAAQATAAYAAAA=")
 tile_set = SubResource("TileSet_tbgi4")
 
-[node name="clef" parent="Environnement" instance=ExtResource("4_c6pm6")]
-position = Vector2(1243, -463)
-scale = Vector2(2, 2)
-
 [node name="imgs et anims" type="Node2D" parent="Environnement"]
 
 [node name="TableNoshadow" type="Sprite2D" parent="Environnement/imgs et anims"]
@@ -649,6 +645,9 @@ frame_progress = 0.8800264
 
 [node name="book1" parent="Environnement/imgs et anims" instance=ExtResource("24_q516x")]
 position = Vector2(756, 332)
+
+[node name="book2" parent="Environnement/imgs et anims" instance=ExtResource("25_lyjg7")]
+position = Vector2(-96, 1101)
 
 [node name="Hiori" parent="." instance=ExtResource("33_wpycy")]
 z_index = 5

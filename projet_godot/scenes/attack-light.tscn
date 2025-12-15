@@ -1,7 +1,8 @@
-[gd_scene load_steps=15 format=3 uid="uid://doev0pfug4na8"]
+[gd_scene load_steps=16 format=3 uid="uid://doev0pfug4na8"]
 
 [ext_resource type="Texture2D" uid="uid://cp44i068kycvm" path="res://assets/medias/environnement/Decorations/Animated Decorations/attack-spritesheet.png" id="1_52bvb"]
 [ext_resource type="Script" uid="uid://c1ln1mg5ye85w" path="res://scripts/attack_light.gd" id="1_jfqj0"]
+[ext_resource type="Texture2D" uid="uid://cbqen3aki3gg" path="res://assets/medias/environnement/Decorations/big_light.png" id="3_766fe"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jfqj0"]
 atlas = ExtResource("1_52bvb")
@@ -84,7 +85,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_52bvb"]
 radius = 60.827625
 
-[node name="Area2D" type="Area2D"]
+[node name="light_bulb" type="Area2D"]
 script = ExtResource("1_jfqj0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -99,3 +100,9 @@ frame_progress = 0.47242743
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(1.5, 1.5)
 shape = SubResource("CircleShape2D_52bvb")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(0, 106)
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+texture = ExtResource("3_766fe")

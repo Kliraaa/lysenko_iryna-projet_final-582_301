@@ -5,7 +5,8 @@ const SPEED = 450.0
 const JUMP_VELOCITY = -560.0
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
-@onready var run_sfx: AudioStreamPlayer2D = $AudioStreamPlayer2D
+@onready var run_sfx: AudioStreamPlayer2D = $walk_sfx
+@onready var attack_sfx: AudioStreamPlayer2D = $attack_sfx
 # @onready var death_sfx: AudioStreamPlayer2D = $death_sound
 @onready var muzzle = $Muzzle
 
@@ -14,14 +15,14 @@ var taking_damage = false
 
 signal light_shot(attack_scene, location)
 
-func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("shoot"):
-		shoot()
-
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
+
+func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed("shoot"):
+		shoot()
 
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
@@ -84,4 +85,6 @@ func take_damage():
 
 
 func shoot():
-	light_shot.emit(attack_scene,)
+	light_shot.emit(attack_scene, muzzle.global_position)
+	animated_sprite.play("attack")
+	attack_sfx.play()

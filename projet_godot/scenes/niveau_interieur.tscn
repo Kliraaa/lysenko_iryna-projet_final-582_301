@@ -1,5 +1,6 @@
-[gd_scene load_steps=37 format=4 uid="uid://bcn2kn4i6dfja"]
+[gd_scene load_steps=38 format=4 uid="uid://bcn2kn4i6dfja"]
 
+[ext_resource type="Script" uid="uid://bi23v4m3083jl" path="res://scripts/niveau.gd" id="1_3gi74"]
 [ext_resource type="Texture2D" uid="uid://b1ftii3nt31cf" path="res://assets/medias/environnement/Background/layer_2.png" id="1_og1vs"]
 [ext_resource type="Texture2D" uid="uid://btdaw857g7fg3" path="res://assets/medias/environnement/Background/layer_1.png" id="1_vxglm"]
 [ext_resource type="Texture2D" uid="uid://ovu87keidabw" path="res://assets/medias/environnement/main_tileset_4x.png" id="3_sugp2"]
@@ -481,11 +482,12 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 "
 
 [node name="niveau_interieur" type="Node2D"]
+script = ExtResource("1_3gi74")
 
 [node name="Environnement" type="Node2D" parent="."]
 
@@ -652,7 +654,7 @@ position = Vector2(-96, 1101)
 
 [node name="Hiori" parent="." instance=ExtResource("33_wpycy")]
 z_index = 5
-position = Vector2(-139, 1845)
+position = Vector2(-18, 293)
 scale = Vector2(4, 4)
 floor_max_angle = 1.2077678
 
@@ -693,10 +695,11 @@ texture = ExtResource("36_wpycy")
 [node name="CanvasLayer" parent="." instance=ExtResource("38_wpycy")]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 color = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
 
-[node name="Area2D" parent="." instance=ExtResource("30_lyjg7")]
+[node name="light_bulb" parent="." instance=ExtResource("30_lyjg7")]
 position = Vector2(21, 1838)
+
+[node name="Light Container" type="Node2D" parent="."]
 
 [connection signal="pressed" from="Hiori/Camera2D/CanvasLayer/HUD/Menu" to="Hiori/Camera2D/CanvasLayer/HUD/PauseMenu" method="_on_menu_pressed"]

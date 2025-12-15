@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbqen3aki3gg"
-path="res://.godot/imported/big_light.png-f7a2501ec4cc7d90bcfa2e73f25a9ee3.ctex"
+uid="uid://bcerll0riegie"
+path="res://.godot/imported/light_big.png-d817261fb69c4ee993de9ec76da02088.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/medias/environnement/Decorations/big_light.png"
-dest_files=["res://.godot/imported/big_light.png-f7a2501ec4cc7d90bcfa2e73f25a9ee3.ctex"]
+source_file="res://assets/medias/environnement/Decorations/light_big.png"
+dest_files=["res://.godot/imported/light_big.png-d817261fb69c4ee993de9ec76da02088.ctex"]
 
 [params]
 

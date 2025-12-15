@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=4 uid="uid://bcn2kn4i6dfja"]
+[gd_scene load_steps=50 format=4 uid="uid://bcn2kn4i6dfja"]
 
 [ext_resource type="Texture2D" uid="uid://b1ftii3nt31cf" path="res://assets/medias/environnement/Background/layer_2.png" id="1_og1vs"]
 [ext_resource type="Texture2D" uid="uid://btdaw857g7fg3" path="res://assets/medias/environnement/Background/layer_1.png" id="1_vxglm"]
@@ -34,7 +34,8 @@
 [ext_resource type="Texture2D" uid="uid://bonht1wr8hrl7" path="res://assets/medias/environnement/Decorations/window.png" id="34_8fdgm"]
 [ext_resource type="PackedScene" uid="uid://ckxs61ocxwnig" path="res://scenes/platforme_1.tscn" id="34_fuf3a"]
 [ext_resource type="Texture2D" uid="uid://c4od38kuutou8" path="res://assets/medias/environnement/level-ref.png" id="35_0a03m"]
-[ext_resource type="Texture2D" uid="uid://cbqen3aki3gg" path="res://assets/medias/environnement/Decorations/big_light.png" id="35_ixo1q"]
+[ext_resource type="PackedScene" uid="uid://yymgwmh5e5eg" path="res://scenes/torch.tscn" id="35_ehqgp"]
+[ext_resource type="Texture2D" path="res://assets/medias/environnement/Decorations/big_light.png" id="35_ixo1q"]
 [ext_resource type="Texture2D" uid="uid://cb26b7ywdtp4y" path="res://assets/medias/personnages/128x128 textures (41).png" id="36_wpycy"]
 [ext_resource type="PackedScene" uid="uid://dtl186gnjtjmg" path="res://scenes/door_2to3.tscn" id="38_5mecp"]
 [ext_resource type="Script" uid="uid://b30s8nhetk7ua" path="res://scripts/button.gd" id="38_c6pm6"]
@@ -685,30 +686,45 @@ sprite_frames = SubResource("SpriteFrames_pq224")
 autoplay = "default"
 frame_progress = 0.90884703
 
-[node name="empty_big_torch" type="Sprite2D" parent="Environnement/imgs et anims"]
+[node name="empty_big_torch1-1" type="Sprite2D" parent="Environnement/imgs et anims"]
 position = Vector2(-178, 657.00006)
 scale = Vector2(4, 4)
 texture = ExtResource("34_0a03m")
 
-[node name="empty_big_torch2" type="Sprite2D" parent="Environnement/imgs et anims"]
-position = Vector2(-2, 657.00006)
+[node name="empty_big_torch1-2" type="Sprite2D" parent="Environnement/imgs et anims"]
+position = Vector2(0, 657)
 scale = Vector2(4, 4)
 texture = ExtResource("34_0a03m")
 
-[node name="empty_big_torch3" type="Sprite2D" parent="Environnement/imgs et anims"]
-position = Vector2(190, 657.00006)
+[node name="empty_big_torch1-3" type="Sprite2D" parent="Environnement/imgs et anims"]
+position = Vector2(178, 657)
 scale = Vector2(4, 4)
 texture = ExtResource("34_0a03m")
 
-[node name="empty_big_torch4" type="Sprite2D" parent="Environnement/imgs et anims"]
-position = Vector2(-66, 2385)
+[node name="empty_big_torch2-1" type="Sprite2D" parent="Environnement/imgs et anims"]
+position = Vector2(-64, 2385)
 scale = Vector2(4, 4)
 texture = ExtResource("34_0a03m")
 
-[node name="empty_big_torch5" type="Sprite2D" parent="Environnement/imgs et anims"]
+[node name="empty_big_torch2-2" type="Sprite2D" parent="Environnement/imgs et anims"]
 position = Vector2(318, 2385)
 scale = Vector2(4, 4)
 texture = ExtResource("34_0a03m")
+
+[node name="torch1-1" parent="Environnement/imgs et anims" instance=ExtResource("35_ehqgp")]
+position = Vector2(-178, 657)
+
+[node name="torch1-2" parent="Environnement/imgs et anims" instance=ExtResource("35_ehqgp")]
+position = Vector2(0, 657)
+
+[node name="torch1-3" parent="Environnement/imgs et anims" instance=ExtResource("35_ehqgp")]
+position = Vector2(178, 657)
+
+[node name="torch1-4" parent="Environnement/imgs et anims" instance=ExtResource("35_ehqgp")]
+position = Vector2(-66, 2385)
+
+[node name="torch1-5" parent="Environnement/imgs et anims" instance=ExtResource("35_ehqgp")]
+position = Vector2(318, 2385)
 
 [node name="platformes" type="Node" parent="Environnement"]
 
@@ -728,7 +744,7 @@ scale = Vector2(-1, 1)
 
 [node name="Hiori" parent="." instance=ExtResource("33_wpycy")]
 z_index = 5
-position = Vector2(0, 332)
+position = Vector2(0, -10)
 scale = Vector2(4, 4)
 floor_max_angle = 1.2077678
 
@@ -772,7 +788,6 @@ position = Vector2(3620, 93)
 [node name="CanvasLayer" parent="." instance=ExtResource("38_wpycy")]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 color = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
 
 [connection signal="pressed" from="Hiori/Camera2D/CanvasLayer/HUD/Menu" to="Hiori/Camera2D/CanvasLayer/HUD/PauseMenu" method="_on_menu_pressed"]

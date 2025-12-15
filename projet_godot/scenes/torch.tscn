@@ -1,0 +1,56 @@
+[gd_scene load_steps=10 format=3 uid="uid://yymgwmh5e5eg"]
+
+[ext_resource type="Texture2D" uid="uid://dyyhuyjfq57s4" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_big_blue/torch_big_blue_1.png" id="1_gybtl"]
+[ext_resource type="Texture2D" uid="uid://d21m4j1n8uldu" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_big_blue/torch_big_blue_2.png" id="2_21l5o"]
+[ext_resource type="Texture2D" uid="uid://dmhyuuxlikpnv" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_big_blue/torch_big_blue_3.png" id="3_wjrvc"]
+[ext_resource type="Texture2D" uid="uid://djfm37uf4gxll" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_big_blue/torch_big_blue_4.png" id="4_2bkw1"]
+[ext_resource type="Texture2D" uid="uid://8tomtnh7tghe" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_big_blue/torch_big_blue_5.png" id="5_etrdt"]
+[ext_resource type="Texture2D" uid="uid://mlmtuw2eovlx" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_big_blue/torch_big_blue_6.png" id="6_x1r1x"]
+[ext_resource type="Texture2D" uid="uid://l10hagm5e3kx" path="res://assets/medias/environnement/Decorations/light_square.png" id="7_o1df0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e6wph"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gybtl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_21l5o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wjrvc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2bkw1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_etrdt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_x1r1x")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gybtl"]
+radius = 16.75
+height = 51.5
+
+[node name="torch" type="Area2D"]
+scale = Vector2(4, 4)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_e6wph")
+autoplay = "default"
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+color = Color(4.6205523e-06, 0.7081274, 0.94634205, 1)
+energy = 1.5
+texture = ExtResource("7_o1df0")
+texture_scale = 1.2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 6)
+shape = SubResource("CapsuleShape2D_gybtl")

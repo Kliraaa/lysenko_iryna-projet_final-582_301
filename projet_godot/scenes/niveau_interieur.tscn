@@ -35,7 +35,7 @@
 [ext_resource type="PackedScene" uid="uid://ckxs61ocxwnig" path="res://scenes/platforme_1.tscn" id="34_fuf3a"]
 [ext_resource type="Texture2D" uid="uid://c4od38kuutou8" path="res://assets/medias/environnement/level-ref.png" id="35_0a03m"]
 [ext_resource type="PackedScene" uid="uid://yymgwmh5e5eg" path="res://scenes/torch.tscn" id="35_ehqgp"]
-[ext_resource type="Texture2D" uid="uid://bcerll0riegie" path="res://assets/medias/environnement/Decorations/light_big.png" id="35_ixo1q"]
+[ext_resource type="Texture2D" uid="uid://cbqen3aki3gg" path="res://assets/medias/environnement/Decorations/big_light.png" id="35_ixo1q"]
 [ext_resource type="Texture2D" uid="uid://cb26b7ywdtp4y" path="res://assets/medias/personnages/128x128 textures (41).png" id="36_wpycy"]
 [ext_resource type="PackedScene" uid="uid://dtl186gnjtjmg" path="res://scenes/door_2to3.tscn" id="38_5mecp"]
 [ext_resource type="Script" uid="uid://b30s8nhetk7ua" path="res://scripts/button.gd" id="38_c6pm6"]

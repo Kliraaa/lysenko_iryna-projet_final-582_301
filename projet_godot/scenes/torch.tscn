@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://yymgwmh5e5eg"]
+[gd_scene load_steps=11 format=3 uid="uid://yymgwmh5e5eg"]
 
 [ext_resource type="Texture2D" uid="uid://dyyhuyjfq57s4" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_big_blue/torch_big_blue_1.png" id="1_gybtl"]
 [ext_resource type="Texture2D" uid="uid://d21m4j1n8uldu" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_big_blue/torch_big_blue_2.png" id="2_21l5o"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://8tomtnh7tghe" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_big_blue/torch_big_blue_5.png" id="5_etrdt"]
 [ext_resource type="Texture2D" uid="uid://mlmtuw2eovlx" path="res://assets/medias/environnement/Decorations/Animated Decorations/torch_big_blue/torch_big_blue_6.png" id="6_x1r1x"]
 [ext_resource type="Texture2D" uid="uid://l10hagm5e3kx" path="res://assets/medias/environnement/Decorations/light_square.png" id="7_o1df0"]
+[ext_resource type="AudioStream" uid="uid://ddf4i7cutmihg" path="res://assets/audio/light-pickup-sfx.mp3" id="8_21l5o"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_e6wph"]
 animations = [{
@@ -55,3 +56,7 @@ texture_scale = 1.2
 visible = false
 position = Vector2(0, 6)
 shape = SubResource("CapsuleShape2D_gybtl")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_21l5o")
+bus = &"SFX"

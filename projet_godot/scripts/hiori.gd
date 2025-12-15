@@ -5,7 +5,7 @@ const SPEED = 450.0
 const JUMP_VELOCITY = -550.0
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
-# @onready var audio_stream_player_2d: AudioStreamPlayer2D = $AudioStreamPlayer2D
+@onready var run_sfx: AudioStreamPlayer2D = $AudioStreamPlayer2D
 # @onready var death_sfx: AudioStreamPlayer = $death_sound
 
 
@@ -19,7 +19,7 @@ func _physics_process(delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-		#audio_stream_player_2d.stop()
+		run_sfx.stop()
 		
 
 	# Get the input direction
@@ -38,11 +38,11 @@ func _physics_process(delta: float) -> void:
 		return
 	if direction == 0:
 		animated_sprite.play("idle")
-		#audio_stream_player_2d.stop()
+		run_sfx.stop()
 	else:
 		animated_sprite.play("courir")
-		#if not audio_stream_player_2d.playing:
-				#audio_stream_player_2d.play()
+		if not run_sfx.playing:
+				run_sfx.play()
 		
 	#apply movement
 	if is_on_floor():
@@ -51,7 +51,7 @@ func _physics_process(delta: float) -> void:
 		else:
 			animated_sprite.play("courir")
 	else: 
-		#audio_stream_player_2d.stop()
+		run_sfx.stop()
 		if velocity.y < 0:
 			animated_sprite.play("saut_up")
 		else:
